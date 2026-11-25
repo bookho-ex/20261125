@@ -60,6 +60,53 @@ ul.card {
   list-style-position: inside;
 }
 
+#tarot-results {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.tarot-reading-card {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #c3cbe6;
+  border-radius: 8px;
+  background-color: #f8f9ff;
+  text-align: center;
+}
+
+.tarot-reading-card h3,
+.tarot-reading-card h4 {
+  margin: 8px 0;
+}
+
+.tarot-reading-card img {
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  margin: 8px auto;
+  border-radius: 6px;
+}
+
+.tarot-reading-card img.is-reversed {
+  transform: rotate(180deg);
+}
+
+.tarot-orientation {
+  font-weight: 600;
+}
+
+.tarot-meaning {
+  line-height: 1.5;
+}
+
+.tarot-note {
+  color: #5a6478;
+  font-size: 14px;
+}
+
 #guestbook-form {
   max-width: 520px;
 }
@@ -94,10 +141,23 @@ footer {
   nav {
     flex-direction: column;
   }
+
+  #tarot-results {
+    grid-template-columns: 1fr;
+  }
 }
 
 body.dark,
 body.dark .card {
   background-color: #222222;
   color: #eeeeee;
+}
+
+body.dark .tarot-reading-card {
+  background-color: #2b2b2b;
+  border-color: #555555;
+}
+
+body.dark .tarot-note {
+  color: #cccccc;
 }

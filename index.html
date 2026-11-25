@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
     <script src="weather.js" defer></script>
+    <script src="tarot-data.js" defer></script>
+    <script src="tarot.js" defer></script>
   </head>
   <body>
     <header>
@@ -35,6 +37,16 @@
         <button id="run-button" type="button">기온 조회</button>
         <p id="output" aria-live="polite">도시를 선택하고 기온 조회를 눌러 주세요.</p>
       </div>
+      <section id="tarot-section" aria-labelledby="tarot-heading">
+        <h2 id="tarot-heading">오늘의 타로</h2>
+        <div class="card">
+          <p>78장의 카드 중 오전·오후·저녁의 흐름을 보여주는 세 장을 뽑아 보세요.</p>
+          <button id="tarot-draw-button" type="button">타로 3장 뽑기</button>
+          <p id="tarot-status" aria-live="polite">버튼을 눌러 오늘의 카드를 뽑아 보세요.</p>
+          <div id="tarot-results" class="tarot-results" aria-live="polite"></div>
+          <p class="tarot-note">타로 해석은 가볍게 참고하는 오늘의 이야기입니다.</p>
+        </div>
+      </section>
       <h2>소개</h2>
       <img src="images/profile.png" alt="조윤재의 프로필 그림" width="160">
       <p class="card">웹프로그래밍을 배우는 <strong>조윤재</strong>입니다.</p>
