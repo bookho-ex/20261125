@@ -1,0 +1,103 @@
+body {
+  background-color: #eef2ff;
+  color: #17213a;
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+#list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#list li {
+  display: block;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border: 1px solid #d9def3;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+#list li button {
+  margin-top: 8px;
+}
+
+h1 {
+  color: #1f3a93;
+  font-size: 28px;
+}
+
+h2 {
+  color: #3157d5;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #3157d5;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 16px;
+  margin: 12px 0;
+  border: 1px solid #c3cbe6;
+}
+
+ul.card {
+  list-style-position: inside;
+}
+
+#guestbook-form {
+  max-width: 520px;
+}
+
+#guestbook-form p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+#guestbook-form label {
+  width: 72px;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+#guestbook-form input,
+#guestbook-form textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  color: #5a6478;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+body.dark,
+body.dark .card {
+  background-color: #222222;
+  color: #eeeeee;
+}
